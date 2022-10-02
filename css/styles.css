@@ -57,7 +57,6 @@ h4 {
 
 .awesome__main__iteam {
     text-align: center;
-    width: 370px;
 }
 
 .awesome__main__iteam h4 {
@@ -80,7 +79,6 @@ h4 {
 
 .tab__basic {
     text-align: center;
-    width: 370px;
 }
 
 .tab__basic h4 {
@@ -126,11 +124,6 @@ h4 {
     column-gap: 30px;
     margin-top: 83px;
     padding-bottom: 64px;
-    text-align: center;
-}
-
-.comment__text {
-    width: 370px;
 }
 
 .comment__text h5 {
