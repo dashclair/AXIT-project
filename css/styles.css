@@ -1,0 +1,168 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: 300px;
+    line-height: 21px;
+    font-size: 18px;
+}
+
+p {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 0 15px;
+}
+
+.title {
+    font-size: 36px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.separator {
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    font-size: 18px;
+    color: #86878B;
+    text-align: center;
+    line-height: 21px;
+}
+
+h4 {
+    font-family: 'Open Sans';
+    font-size: 24px;
+}
+
+.awesome__main {
+    display: flex;
+    margin-bottom: 58px;
+    margin-top: 71px;
+    column-gap: 30px;
+}
+
+.awesome__main__iteam {
+    text-align: center;
+    width: 370px;
+}
+
+.awesome__main__iteam h4 {
+    padding-top: 39px;
+    padding-bottom: 45px;
+    margin: auto;
+    text-align: center;
+}
+
+.pricing {
+    background-color: #F5F5F5;
+}
+
+.tab {
+    display: flex;
+    margin-top: 79px;
+    padding-bottom: 50px;
+    column-gap: 30px;
+}
+
+.tab__basic {
+    text-align: center;
+    width: 370px;
+}
+
+.tab__basic h4 {
+    background-color: #333333;
+    color: white;
+    padding: 20px 150px;
+    border: 2px solid #F5F5F5;
+}
+
+.tab__basic h3 {
+    font-size: 36px;
+    background-color: #333333;
+    color: white;
+    padding: 30px 150px;
+    border: 2px solid #F5F5F5;
+}
+
+.tab__basic p {
+    background-color: #333333;
+    padding: 14px 135px;
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #F5F5F5;
+}
+
+.tab__basic__row p {
+    background-color: #FFFFFF;
+    padding: 14px 120px;
+    color: #86878B;
+    border: 2px solid #F5F5F5;
+}
+
+.tab__basic_up {
+    text-align: center;
+    position: relative;
+    top: -20px;
+    bottom: 20px;
+    box-shadow: 0px 4px 10px 0px #33333333;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 83px;
+    padding-bottom: 64px;
+    text-align: center;
+}
+
+.comment__text {
+    width: 370px;
+}
+
+.comment__text h5 {
+    background-color: #E2E2E2;
+    color: #86878B;
+    text-align: center;
+    padding: 38px 25px 38px 25px;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.comment__text h5::after {
+    content: '';
+    position: relative;
+    left: -150px;
+    bottom: -69px;
+    border: 10px solid transparent;
+    border-top: 10px solid #E2E2E2;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-top: 67px;
+}
+
+.review h4 {
+    padding-left: 24px;
+}
+
+.comment__job {
+    padding-left: 96px;
+    text-align: left;
+}
