@@ -15,7 +15,7 @@ p {
     margin: 0 auto;
 }
 
-.section {
+section {
     padding: 0 15px;
 }
 
@@ -48,6 +48,11 @@ h4 {
     font-size: 24px;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
 .awesome__main {
     display: flex;
     margin-bottom: 58px;
@@ -57,6 +62,7 @@ h4 {
 
 .awesome__main__iteam {
     text-align: center;
+    flex-grow: 1;
 }
 
 .awesome__main__iteam h4 {
@@ -79,16 +85,17 @@ h4 {
 
 .tab__basic {
     text-align: center;
+    flex-grow: 1;
 }
 
-.tab__basic h4 {
+.tab__title {
     background-color: #333333;
     color: white;
     padding: 20px 150px;
     border: 2px solid #F5F5F5;
 }
 
-.tab__basic h3 {
+.tab__price {
     font-size: 36px;
     background-color: #333333;
     color: white;
@@ -96,14 +103,14 @@ h4 {
     border: 2px solid #F5F5F5;
 }
 
-.tab__basic p {
+.tab__subline {
     background-color: #333333;
     padding: 14px 135px;
     color: rgba(255, 255, 255, 0.5);
     border: 2px solid #F5F5F5;
 }
 
-.tab__basic__row p {
+.tab__row p {
     background-color: #FFFFFF;
     padding: 14px 120px;
     color: #86878B;
@@ -134,6 +141,7 @@ h4 {
     align-items: center;
     border-radius: 10px;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .comment__text h5::after {
