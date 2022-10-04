@@ -133,7 +133,7 @@ h3 {
     padding-bottom: 64px;
 }
 
-.comment__text h5 {
+.comment__item h5 {
     background-color: #E2E2E2;
     color: #86878B;
     text-align: center;
@@ -144,7 +144,7 @@ h3 {
     flex-grow: 1;
 }
 
-.comment__text h5::after {
+.comment__item h5::after {
     content: '';
     position: relative;
     left: -150px;
@@ -153,17 +153,14 @@ h3 {
     border-top: 10px solid #E2E2E2;
 }
 
-.review {
+.comment__item__author {
     display: flex;
+    column-gap: 30px;
     align-items: center;
     margin-top: 67px;
 }
 
-.review h4 {
-    padding-left: 24px;
-}
-
-.comment__job {
-    padding-left: 96px;
-    text-align: left;
+.comment__item__job h4 {
+    padding-top: 35px;
+    padding-bottom: 20px;
 }
