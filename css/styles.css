@@ -142,13 +142,14 @@ h3 {
     border-radius: 10px;
     box-sizing: border-box;
     flex-grow: 1;
+    position: relative;
 }
 
 .comment__item h5::after {
     content: '';
-    position: relative;
-    left: -150px;
-    bottom: -69px;
+    position: absolute;
+    left: 100px;
+    bottom: -20px;
     border: 10px solid transparent;
     border-top: 10px solid #E2E2E2;
 }
