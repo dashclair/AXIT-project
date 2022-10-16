@@ -269,30 +269,19 @@ textarea {
     padding: 99px 0 50px 0;
 }
 
-.tabs__nav {
+.nav {
     display: inline-flex;
-}
-
-.tabs__nav a {
-    width: 184px;
     color: #333333;
     text-align: center;
+    align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    padding: 8px 0;
-    z-index: 2;
-}
-
-.tabs__nav a:hover {
-    color: #EC7979;
-}
-
-.tabs__nav a:visited {
-    color: #86878B;
+    width: 184px;
+    height: 40px;
 }
 
 .tabs__item {
@@ -304,55 +293,69 @@ textarea {
     position: relative;
 }
 
-.tabs__item:target {
-    display: flex;
-}
-
-.tabs__item:before {
-    content: '';
-    width: 184px;
-    height: 40px;
+.tab__input {
+    opacity: 0;
     position: absolute;
-    top: -40px;
-    background-color: #FFFFFF;
+
 }
 
-.tabs__item:nth-child(1):before {
+#tab_1:checked~.nav_tab1,
+#tab_2:checked~.nav_tab2,
+#tab_3:checked~.nav_tab3 {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
     border-bottom: none;
-    top: -40px;
-    left: 0;
+    background-color: white;
 }
 
-.tabs__item:nth-child(2):before {
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: white;
-    top: -40px;
-    left: 184px;
+#tab_1:checked~.tabs__item_1:before {
+    content: '';
+    width: 184.5px;
+    position: absolute;
+    height: 1.5px;
+    top: -1px;
+    right: 986px;
+    background-color: white;
 }
 
-.tabs__item:nth-child(3):before {
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: white;
-    top: -40px;
-    left: 368px;
+#tab_2:checked~.tabs__item_2:before {
+    content: '';
+    width: 184.5px;
+    position: absolute;
+    height: 1.5px;
+    top: -1px;
+    left: 188.5px;
+    background-color: white;
 }
 
+#tab_3:checked~.tabs__item_3:before {
+    content: '';
+    width: 184.5px;
+    position: absolute;
+    height: 1.5px;
+    top: -1px;
+    left: 377px;
+    background-color: white;
+}
 
-.tabs__item__content {
+#tab_1:checked~.tabs__item_1,
+#tab_2:checked~.tabs__item_2,
+#tab_3:checked~.tabs__item_3 {
+    display: inline-flex;
+
+}
+
+.tabs-content {
     width: 570px;
 }
 
-.tabs__item__content h4 {
+.tabs-content h4 {
     font-size: 30px;
     line-height: 41px;
     padding: 52px 0;
 }
 
-.tabs__item__content p {
+.tabs-content p {
     margin: 27px 0;
 }
 
