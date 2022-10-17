@@ -603,8 +603,11 @@ textarea {
     background-color: #000000;
 }
 
-.footer__icons {
-    display: flex;
+.media__icons_footer img {
+    scale: 1;
+}
+
+.media__icons_footer {
     justify-content: center;
     gap: 33px;
     padding-top: 35px;
