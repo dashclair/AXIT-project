@@ -299,50 +299,42 @@ textarea {
 
 }
 
-#tab_1:checked~.nav_tab1,
-#tab_2:checked~.nav_tab2,
-#tab_3:checked~.nav_tab3 {
+.tab__input_1:checked~.nav_tab1,
+.tab__input_2:checked~.nav_tab2,
+.tab__input_3:checked~.nav_tab3 {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0px 0px;
     border-bottom: none;
     background-color: white;
 }
 
-#tab_1:checked~.tabs__item_1:before {
+.tab__input_1:checked~.tabs__item_1:before,
+.tab__input_2:checked~.tabs__item_2:before,
+.tab__input_3:checked~.tabs__item_3:before {
     content: '';
     width: 184.5px;
     position: absolute;
     height: 1.5px;
     top: -1px;
+    background-color: white;
+}
+
+.tab__input_1:checked~.tabs__item_1:before {
     right: 986px;
-    background-color: white;
 }
 
-#tab_2:checked~.tabs__item_2:before {
-    content: '';
-    width: 184.5px;
-    position: absolute;
-    height: 1.5px;
-    top: -1px;
+.tab__input_2:checked~.tabs__item_2:before {
     left: 188.5px;
-    background-color: white;
 }
 
-#tab_3:checked~.tabs__item_3:before {
-    content: '';
-    width: 184.5px;
-    position: absolute;
-    height: 1.5px;
-    top: -1px;
+.tab__input_3:checked~.tabs__item_3:before {
     left: 377px;
-    background-color: white;
 }
 
-#tab_1:checked~.tabs__item_1,
-#tab_2:checked~.tabs__item_2,
-#tab_3:checked~.tabs__item_3 {
+.tab__input_1:checked~.tabs__item_1,
+.tab__input_2:checked~.tabs__item_2,
+.tab__input_3:checked~.tabs__item_3 {
     display: inline-flex;
-
 }
 
 .tabs-content {
