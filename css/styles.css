@@ -32,7 +32,7 @@ h4 {
 .container {
     width: 1170px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 15px;
 }
 
 section {
@@ -42,6 +42,32 @@ section {
 
 textarea {
     resize: none;
+}
+
+.title {
+    font-weight: 400px;
+    font-size: 36px;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.separator {
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.text {
+    font-size: 18px;
+    color: #86878B;
+    text-align: center;
+    line-height: 21px;
 }
 
 /* header */
@@ -98,13 +124,12 @@ textarea {
 
 .main__page {
     display: flex;
-    column-gap: 60px;
+    column-gap: 30px;
     padding: 207px 0 185px 0;
-    z-index: 2;
 }
 
 .main__info {
-    width: 670px;
+    max-width: 670px;
     z-index: 2;
 }
 
@@ -118,12 +143,18 @@ textarea {
     color: #FFFFFF;
 }
 
+.separator_main {
+    position: relative;
+    background-color: white;
+    margin: 55px 0 42px 0;
+}
+
 .main__added p {
     color: #FFFFFF;
 }
 
 .main__added {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
 }
 
 .main-btn {
@@ -157,7 +188,6 @@ textarea {
     background-color: white;
     width: 470px;
     height: 450px;
-    z-index: 2;
     border-radius: 10px;
     position: relative;
 }
@@ -180,7 +210,7 @@ textarea {
 
 .info input,
 textarea {
-    width: 370px;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -240,8 +270,6 @@ textarea {
 }
 
 .media__title h4 {
-    line-height: 33px;
-    font-weight: 700;
     padding-bottom: 26px;
 }
 
@@ -257,7 +285,7 @@ textarea {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 50px;
+    column-gap: 45px;
     flex-grow: 1;
 }
 
@@ -382,38 +410,6 @@ textarea {
 }
 
 /* about */
-
-.title {
-    font-weight: 400px;
-    font-size: 36px;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    text-align: center;
-    align-items: center;
-}
-
-.separator {
-    width: 170px;
-    height: 1px;
-    background-color: #EC7979;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.separator_main {
-    position: relative;
-    background-color: white;
-    margin: 55px 0 42px 0;
-}
-
-
-.text {
-    font-size: 18px;
-    color: #86878B;
-    text-align: center;
-    line-height: 21px;
-}
 
 .awesome__main {
     display: flex;
