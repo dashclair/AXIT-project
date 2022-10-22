@@ -1,0 +1,30 @@
+@media screen and (max-width:1200px) {
+    .container {
+        width: 992px;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .header__logo {
+        margin: 0;
+        padding-left: 115px;
+    }
+
+    .main__page {
+        padding: 137px 0 131px 0;
+        column-gap: 30px;
+    }
+
+    .main__info {
+        width: 450px;
+    }
+
+    .logo_main img {
+        height: 42px;
+        margin: 17px 0 61px 0;
+    }
+}
