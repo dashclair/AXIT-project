@@ -10,6 +10,14 @@ p {
     text-decoration: none;
 }
 
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+}
+
 h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500px;
@@ -93,11 +101,8 @@ textarea {
 }
 
 .header__nav a {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     text-align: center;
-    font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     width: 113px;
@@ -135,7 +140,6 @@ label img {
 
 .main__info {
     max-width: 670px;
-    z-index: 2;
 }
 
 .logo_main img {
@@ -144,18 +148,14 @@ label img {
 
 }
 
-.main__info h1 {
+.main__info h1,
+.main__added p {
     color: #FFFFFF;
 }
 
 .separator_main {
-    position: relative;
     background-color: white;
     margin: 55px 0 42px 0;
-}
-
-.main__added p {
-    color: #FFFFFF;
 }
 
 .main__added {
@@ -164,16 +164,12 @@ label img {
 
 .main-btn {
     background-color: none;
-    text-decoration: none;
     border: 3px solid white;
-    color: white;
     display: inline-flex;
     width: 270px;
     height: 58px;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     font-size: 18px;
     line-height: 25px;
 }
@@ -194,7 +190,6 @@ label img {
     width: 470px;
     height: 450px;
     border-radius: 10px;
-    position: relative;
 }
 
 .main__form h4 {
@@ -215,7 +210,6 @@ label img {
 
 .info input,
 textarea {
-    width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -234,10 +228,6 @@ textarea {
 
 .form-btn {
     background-color: #EC7979;
-    color: white;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     align-items: center;
@@ -254,7 +244,6 @@ textarea {
 }
 
 .form-btn:active {
-    background-color: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
 
@@ -290,7 +279,6 @@ textarea {
 .media__icons {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     column-gap: 45px;
     text-align: center;
 }
@@ -299,6 +287,12 @@ textarea {
 
 .tabs .container {
     padding: 99px 0 50px 0;
+}
+
+.tab__input {
+    opacity: 0;
+    position: absolute;
+
 }
 
 .nav {
@@ -325,10 +319,46 @@ textarea {
     position: relative;
 }
 
-.tab__input {
-    opacity: 0;
-    position: absolute;
+.tabs-content {
+    width: 570px;
+}
 
+.tabs-content h4 {
+    font-size: 30px;
+    line-height: 41px;
+    padding: 52px 0;
+}
+
+.tabs-content p {
+    margin: 27px 0;
+}
+
+.filled-btn {
+    background-color: #EC7979;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    display: inline-flex;
+    width: 270px;
+    height: 58px;
+    justify-content: center;
+}
+
+.filled-btn_tab-2 {
+    background-color: #86878B;
+}
+
+.filled-btn_tab-3 {
+    background-color: #E2E2E2;
+}
+
+.filled-btn:hover {
+    background-color: #AB4949;
+}
+
+.filled-btn:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .tab__input_1:checked~.nav_tab1,
@@ -369,51 +399,6 @@ textarea {
     display: flex;
 }
 
-.tabs-content {
-    width: 570px;
-}
-
-.tabs-content h4 {
-    font-size: 30px;
-    line-height: 41px;
-    padding: 52px 0;
-}
-
-.tabs-content p {
-    margin: 27px 0;
-}
-
-.filled-btn {
-    background-color: #EC7979;
-    color: white;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    align-items: center;
-    display: inline-flex;
-    width: 270px;
-    height: 58px;
-    justify-content: center;
-}
-
-.filled-btn_tab-2 {
-    background-color: #86878B;
-}
-
-.filled-btn_tab-3 {
-    background-color: #E2E2E2;
-}
-
-.filled-btn:hover {
-    background-color: #AB4949;
-}
-
-.filled-btn:active {
-    background-color: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949;
-}
 
 /* about */
 
@@ -432,11 +417,10 @@ textarea {
 .awesome__main__iteam h4 {
     padding-top: 39px;
     padding-bottom: 45px;
-    margin: auto;
     text-align: center;
 }
 
-/* price */
+/* pricing */
 
 .pricing {
     background-color: #F5F5F5;
@@ -582,7 +566,7 @@ textarea {
     z-index: 2;
 }
 
-/* contacts form */
+/* contacts*/
 
 .contacts__info {
     margin-top: 39px;
@@ -597,12 +581,11 @@ textarea {
 
 .info_right textarea {
     width: 569px;
-    padding-top: 50px;
-    padding-bottom: 29px;
+    padding: 50px 0 29px 0;
 }
 
 .filled-btn_form {
-    margin: 50px auto 50px auto;
+    margin: 50px 400px;
     width: 370px;
 }
 

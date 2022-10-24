@@ -2,8 +2,6 @@
 
     .container {
         width: 992px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 
     p,
@@ -12,14 +10,14 @@
         line-height: 16px;
     }
 
-    h4 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
     h1 {
         font-size: 36px;
         line-height: 42px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .seapraror {
@@ -37,6 +35,8 @@
         padding-left: 100px;
     }
 
+    /* header */
+
     .main__page {
         padding: 137px 0 131px 100px;
     }
@@ -45,6 +45,8 @@
         height: 42px;
         margin: 17px 0 61px 0;
     }
+
+    /* main */
 
     .main__info {
         max-width: 450px;
@@ -69,6 +71,8 @@
         width: 298px;
     }
 
+    /* media */
+
     .media__info {
         padding: 14px 0 16px 0;
     }
@@ -76,6 +80,8 @@
     .media__title {
         width: 402px;
     }
+
+    /* tab */
 
     .tabs .container {
         padding: 50px 0 0 0;
@@ -130,10 +136,7 @@
         left: 353px;
     }
 
-    .tab {
-        padding: 50px 0;
-        column-gap: 20px;
-    }
+    /* about , pricing and customers*/
 
     .tab__basic,
     .comment__item,
@@ -142,19 +145,26 @@
         width: 318px;
     }
 
-    .comment {
-        margin: 32px 0 50px 0;
-    }
-
     .awesome__main__iteam img,
     .comment__item__author img,
     .media__icons {
         scale: 0.9;
     }
 
+    .tab {
+        padding: 50px 0;
+        column-gap: 20px;
+    }
+
+    .comment {
+        margin: 32px 0 50px 0;
+    }
+
+    /* banner, contacts */
+
     .main-btn_banner,
     .filled-btn_form {
-        margin: 32px 353px 50px 353px;
+        margin: 32px 337px 50px 337px;
     }
 
     .info_left input,
@@ -166,8 +176,6 @@
 @media screen and (max-width:992px) {
     .container {
         width: 288px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 
     .title {
@@ -180,6 +188,14 @@
 
     .media__icons img {
         scale: 0.4;
+    }
+
+    .main__info h1,
+    .main__added,
+    .media__info,
+    .tabs-content h4,
+    .tabs-content p {
+        text-align: center;
     }
 
     /* header */
@@ -207,8 +223,9 @@
 
     .header__nav a {
         width: 288px;
-        margin: 0 auto;
     }
+
+    /* main */
 
     .main__page {
         padding: 84px 0 50px 0;
@@ -218,25 +235,17 @@
         display: none;
     }
 
-    .main__info h1,
-    .main__added,
-    .media__info,
-    .tabs-content h4,
-    .tabs-content p {
-        text-align: center;
-    }
-
     .separator {
         margin: 44px auto 42px auto;
+    }
+
+    .main-btn {
+        margin-bottom: 56px;
     }
 
     .main__form {
         height: 381px;
         margin-bottom: 42px;
-    }
-
-    .main-btn {
-        margin-bottom: 56px;
     }
 
     .main__form__info,
@@ -248,6 +257,8 @@
         padding: 0 20px 50px 20px;
     }
 
+    /* madia */
+
     .media__info {
         padding-top: 31px;
     }
@@ -257,6 +268,8 @@
         column-gap: 10px;
         justify-content: center;
     }
+
+    /* tabs */
 
     .tabs .container {
         padding-top: 41px;
@@ -306,6 +319,8 @@
         left: 190px;
     }
 
+    /* about */
+
     .awesome__main {
         flex-wrap: wrap;
         margin-top: 10px;
@@ -319,6 +334,8 @@
         margin-bottom: 20px;
     }
 
+    /* pricing */
+
     .tab {
         flex-wrap: wrap;
         row-gap: 27px;
@@ -330,6 +347,8 @@
         bottom: 0;
         box-shadow: none;
     }
+
+    /* customers  */
 
     .comment label {
         display: flex;
@@ -379,6 +398,8 @@
         margin: 60px 0 32px 0;
     }
 
+    /* banner, contacts */
+
     .main-btn_banner,
     .filled-btn_form {
         margin: 50px auto 58px auto;
@@ -388,15 +409,4 @@
     .comment {
         flex-wrap: wrap;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
