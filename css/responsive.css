@@ -1,24 +1,3 @@
-/* 
-p - font-size: 14px;
-    line-height: 16px;
-
-h4 - font-weight: 700;
-     font-size: 18px;
-     line-height: 25px;
-
-seapraror - width 115
-main p - width 183, h 32
-main button width 183, height 50
-
-form width 398, height 450
-main__form__info - width:298;
-.form-btn - width: 398px;
-
-media 
-.media__info - column-gap:20px;
-                padding: 14px 0 16px 0;
- */
-
 @media screen and (max-width:1200px) {
 
     .container {
@@ -27,7 +6,8 @@ media
         padding: 0 15px;
     }
 
-    p {
+    p,
+    .text {
         font-size: 14px;
         line-height: 16px;
     }
@@ -46,6 +26,12 @@ media
         width: 115px;
     }
 
+    .title {
+        padding-top: 100px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
     .header__logo {
         margin: 0;
         padding-left: 100px;
@@ -61,12 +47,11 @@ media
     }
 
     .main__info {
-        width: 450px;
+        max-width: 450px;
     }
 
     .separator_main {
         margin: 42px 0 31px 0;
-        ;
     }
 
     .main-btn {
@@ -92,12 +77,326 @@ media
         width: 402px;
     }
 
+    .tabs .container {
+        padding: 50px 0 0 0;
+    }
+
+    .nav {
+        width: 172px;
+    }
+
+    .tabs__item {
+        padding-left: 85px;
+        column-gap: 25px;
+    }
+
+    .tabs-content {
+        width: 483px;
+        padding: 35px 0;
+    }
+
+    .tabs-content h4 {
+        font-size: 24px;
+        line-height: 33px;
+        padding: 0;
+    }
+
+    .filled-btn {
+        width: 232px;
+    }
+
+    .tabs__item img {
+        width: 399px;
+        height: 385px;
+    }
+
+    .tab__input_1:checked~.tabs__item_1:before,
+    .tab__input_2:checked~.tabs__item_2:before,
+    .tab__input_3:checked~.tabs__item_3:before {
+        width: 173px;
+        height: 5px;
+        top: -2px;
+    }
+
+    .tab__input_1:checked~.tabs__item_1:before {
+        right: 817px;
+    }
+
+    .tab__input_2:checked~.tabs__item_2:before {
+        left: 176px;
+    }
+
+    .tab__input_3:checked~.tabs__item_3:before {
+        left: 353px;
+    }
+
+    .tab {
+        padding: 50px 0;
+        column-gap: 20px;
+    }
+
+    .tab__basic,
+    .comment__item,
+    .main-btn_banner,
+    .filled-btn_form {
+        width: 318px;
+    }
+
+    .comment {
+        margin: 32px 0 50px 0;
+    }
+
+    .awesome__main__iteam img,
+    .comment__item__author img,
+    .media__icons {
+        scale: 0.9;
+    }
+
+    .main-btn_banner,
+    .filled-btn_form {
+        margin: 32px 353px 50px 353px;
+    }
+
+    .info_left input,
+    .info_right textarea {
+        width: 486px;
+    }
 }
 
-/* @media screen and (max-width:992px) {
+@media screen and (max-width:992px) {
     .container {
-        width: 320px;
+        width: 288px;
         margin: 0 auto;
         padding: 0 15px;
     }
-} */
+
+    .title {
+        padding: 50px 0 0 0;
+    }
+
+    .separator {
+        width: 134px;
+    }
+
+    .media__icons img {
+        scale: 0.4;
+    }
+
+    /* header */
+
+    .header__logo {
+        padding: 0;
+        scale: 0.6;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    label img {
+        display: block;
+        padding: 20px 10px 20px 0px;
+        align-items: center;
+    }
+
+    .burger-nav:checked+label+.header__nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 181px;
+    }
+
+    .header__nav a {
+        width: 288px;
+        margin: 0 auto;
+    }
+
+    .main__page {
+        padding: 84px 0 50px 0;
+    }
+
+    .logo_main {
+        display: none;
+    }
+
+    .main__info h1,
+    .main__added,
+    .media__info,
+    .tabs-content h4,
+    .tabs-content p {
+        text-align: center;
+    }
+
+    .separator {
+        margin: 44px auto 42px auto;
+    }
+
+    .main__form {
+        height: 381px;
+        margin-bottom: 42px;
+    }
+
+    .main-btn {
+        margin-bottom: 56px;
+    }
+
+    .main__form__info,
+    .main__form__info input {
+        width: 248px;
+    }
+
+    .main__form__info {
+        padding: 0 20px 50px 20px;
+    }
+
+    .media__info {
+        padding-top: 31px;
+    }
+
+    .media__icons {
+        width: 288px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    .tabs .container {
+        padding-top: 41px;
+    }
+
+    .nav {
+        width: 90px;
+    }
+
+    .tabs__item img {
+        display: none;
+    }
+
+    .tabs__item {
+        padding: 0 25px 0 21px;
+    }
+
+    .filled-btn {
+        width: 242px;
+    }
+
+    .main-btn,
+    .main__form,
+    .form-btn,
+    .tabs-content .tab__basic,
+    .filled-btn_form,
+    .info_left input,
+    .info_right textarea {
+        width: 287px;
+    }
+
+    .tab__input_1:checked~.tabs__item_1:before,
+    .tab__input_2:checked~.tabs__item_2:before,
+    .tab__input_3:checked~.tabs__item_3:before {
+        width: 90px;
+    }
+
+    .tab__input_1:checked~.tabs__item_1:before {
+        right: 196px;
+    }
+
+    .tab__input_2:checked~.tabs__item_2:before {
+        left: 94px;
+    }
+
+    .tab__input_3:checked~.tabs__item_3:before {
+        left: 190px;
+    }
+
+    .awesome__main {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .awesome__main__iteam h4 {
+        padding-top: 10px;
+    }
+
+    .awesome__main__iteam {
+        margin-bottom: 20px;
+    }
+
+    .tab {
+        flex-wrap: wrap;
+        row-gap: 27px;
+    }
+
+    .tab__basic_up {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+
+    .comment label {
+        display: flex;
+    }
+
+    .comment__item {
+        display: none;
+    }
+
+    .sliders-nav {
+        display: flex;
+        column-gap: 50px;
+        margin: 0 auto;
+    }
+
+    .bar {
+        position: relative;
+        top: 350px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100px;
+        border: 1px solid #86878B;
+        cursor: pointer;
+        transition: all .4s ease;
+    }
+
+    .input-slider-1:checked~.sliders-nav .bar_1,
+    .input-slider-2:checked~.sliders-nav .bar_2,
+    .input-slider-3:checked~.sliders-nav .bar_3 {
+        transition: all .6 ease;
+        transform: scale(1.1);
+        background-color: #86878B;
+    }
+
+    .input-slider-1:checked~.comment__item_1,
+    .input-slider-2:checked~.comment__item_2,
+    .input-slider-3:checked~.comment__item_3 {
+        display: block;
+
+    }
+
+    .comment__item__txt {
+        margin-bottom: 0;
+    }
+
+    .comment__item__author {
+        margin: 60px 0 32px 0;
+    }
+
+    .main-btn_banner,
+    .filled-btn_form {
+        margin: 50px auto 58px auto;
+    }
+
+    .contacts__info,
+    .comment {
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

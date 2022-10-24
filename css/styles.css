@@ -20,6 +20,7 @@ h1 {
 h3 {
     font-weight: 700;
     font-size: 36px;
+    line-height: 42px;
 }
 
 h4 {
@@ -36,7 +37,6 @@ h4 {
 }
 
 section {
-    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -57,9 +57,7 @@ textarea {
     width: 170px;
     height: 1px;
     background-color: #EC7979;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 40px auto;
 }
 
 
@@ -80,17 +78,18 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header__logo {
     display: flex;
     margin-left: -50px;
     padding: 22px 0;
+    align-items: center;
 }
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
 }
 
 .header__nav a {
@@ -103,6 +102,7 @@ textarea {
     line-height: 19px;
     width: 113px;
     padding: 28px 0;
+    cursor: pointer;
 }
 
 .header__nav a:hover {
@@ -115,17 +115,22 @@ textarea {
     text-transform: uppercase;
 }
 
+.burger-nav,
+label img {
+    display: none;
+}
+
 /* main */
 
 .main {
     background: url(../images/Group\ 16.png) no-repeat center top / cover;
-    padding: 0 15px;
 }
 
 .main__page {
     display: flex;
     column-gap: 30px;
     padding: 207px 0 185px 0;
+    flex-wrap: wrap;
 }
 
 .main__info {
@@ -261,6 +266,7 @@ textarea {
 
 .media__info {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
     padding: 14px 0 18px 0;
 }
@@ -283,10 +289,10 @@ textarea {
 
 .media__icons {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     column-gap: 45px;
-    flex-grow: 1;
+    text-align: center;
 }
 
 /* tabs */
@@ -360,7 +366,7 @@ textarea {
 .tab__input_1:checked~.tabs__item_1,
 .tab__input_2:checked~.tabs__item_2,
 .tab__input_3:checked~.tabs__item_3 {
-    display: inline-flex;
+    display: flex;
 }
 
 .tabs-content {
@@ -438,43 +444,47 @@ textarea {
 
 .tab {
     display: flex;
-    margin-top: 79px;
-    padding-bottom: 50px;
-    column-gap: 30px;
+    padding: 79px 0 50px 0;
+    justify-content: space-between;
 }
 
 .tab__basic {
     text-align: center;
-    flex-grow: 1;
+    width: 370px;
 }
 
-.tab__title {
+.tab__title,
+.tab__price {
     background-color: #333333;
     color: white;
-    padding: 20px 150px;
+    margin: 0 auto;
     border: 2px solid #F5F5F5;
 }
 
+.tab__title {
+    padding: 20px 0;
+}
+
 .tab__price {
-    font-size: 36px;
-    background-color: #333333;
-    color: white;
-    padding: 30px 150px;
+    padding: 30px 0;
+}
+
+.tab__subline,
+.tab__row p {
+    padding: 14px 0;
+    margin: 0 auto;
     border: 2px solid #F5F5F5;
 }
 
 .tab__subline {
     background-color: #333333;
-    padding: 14px 135px;
     color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #F5F5F5;
 }
 
 .tab__row p {
     background-color: #FFFFFF;
-    padding: 14px 120px;
     color: #86878B;
-    border: 2px solid #F5F5F5;
+
 }
 
 .tab__basic_up {
@@ -485,27 +495,30 @@ textarea {
     box-shadow: 0px 4px 10px 0px #33333333;
 }
 
+/* customers */
+
 .comment {
     display: flex;
     justify-content: space-between;
-    column-gap: 30px;
-    margin-top: 83px;
-    padding-bottom: 64px;
+    margin: 83px 0 64px 0;
 }
 
-.comment__item h5 {
+.comment__item {
+    max-width: 370px;
+}
+
+.comment__item__txt {
     background-color: #E2E2E2;
     color: #86878B;
     text-align: center;
-    padding: 38px 25px 38px 25px;
+    padding: 38px 25px;
     align-items: center;
     border-radius: 10px;
-    box-sizing: border-box;
-    flex-grow: 1;
+    margin-bottom: 66px;
     position: relative;
 }
 
-.comment__item h5::after {
+.comment__item__txt::after {
     content: '';
     position: absolute;
     left: 100px;
@@ -518,13 +531,18 @@ textarea {
     display: flex;
     column-gap: 30px;
     align-items: center;
-    margin-top: 67px;
 }
 
 .comment__item__job h4 {
-    padding-top: 35px;
-    padding-bottom: 20px;
+    padding: 35px 0 20px 0;
 }
+
+.comment input,
+.sliders-nav {
+    display: none;
+}
+
+/* banner */
 
 .banner {
     background: url(../images/bgimg.png) no-repeat center top / cover;
@@ -543,20 +561,18 @@ textarea {
 }
 
 .banner__heading {
+    color: white;
     position: relative;
     z-index: 2;
 }
 
-.title_banner {
+.title_banner,
+.text_banner {
     color: white;
 }
 
 .separator_banner {
     background-color: white;
-}
-
-.text_banner {
-    color: white;
 }
 
 .main-btn_banner {
@@ -565,6 +581,8 @@ textarea {
     position: relative;
     z-index: 2;
 }
+
+/* contacts form */
 
 .contacts__info {
     margin-top: 39px;
@@ -584,9 +602,11 @@ textarea {
 }
 
 .filled-btn_form {
-    margin: 50px 400px 50px 400px;
+    margin: 50px auto 50px auto;
     width: 370px;
 }
+
+/* footer */
 
 .footer {
     background-color: #000000;
